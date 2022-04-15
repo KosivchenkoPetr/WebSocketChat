@@ -1,8 +1,18 @@
 package com.petproject.javachat.model;
 
+import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.index.Indexed;
+import org.springframework.data.mongodb.core.mapping.Document;
+
+@Document(collection = "chatMessages")
 public class ChatMessage {
+    @Id
+
+    private String id;
+
     private MessageType type;
     private String content;
+    @Indexed
     private String sender;
     public enum MessageType {
         CHAT,
