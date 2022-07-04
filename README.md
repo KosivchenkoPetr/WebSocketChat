@@ -4,4 +4,4 @@ Added RabbitMQ message broker
 
 Messages are saving with MongoDB
 
-basic JS front 
+simple JS front 
